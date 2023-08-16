@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 8px;
+            background-color: lightgray;
+            border-radius: 8px 8px 0px 0px;
+            border: 1px solid black;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        td.num{
+            text-align: right;
+        }
+
+        tbody > tr:nth-child(odd){/* odd = impar, pode usar também 2n-1*/
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(even){/* even = par, pode usar também 2n*/
+            background-color: lightgray;
+        }
+
+        thead, tfoot{
+            color: white;
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!-- anatomia de tabelas grandes 
+        TABLE
+            CAPTION
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <table>
+        <caption>População das unidades federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.377.23</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.377.23</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.377.23</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.377.23</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.377.23</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.377.23</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.377.23</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.377.23</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.377.23</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.377.23</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.377.23</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.377.23</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td><strong>18.402.666</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque dicta laborum, nam at amet cum sapiente quae magnam itaque porro! Ratione aperiam expedita quo debitis voluptate architecto placeat quidem a. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum reiciendis eius quod illo placeat ab accusamus laboriosam autem. Consequatur expedita laborum nulla rem cumque architecto eius maxime nam dolore nemo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quidem eius dolorem distinctio. Expedita, eligendi laborum minima dolores qui adipisci necessitatibus quidem sit delectus cumque voluptates sint eveniet nemo in. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda animi molestias rerum excepturi illo, voluptatibus, veritatis expedita itaque quasi omnis quod sapiente quibusdam eveniet ducimus et blanditiis odit! Expedita, hic.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque dicta laborum, nam at amet cum sapiente quae magnam itaque porro! Ratione aperiam expedita quo debitis voluptate architecto placeat quidem a. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum reiciendis eius quod illo placeat ab accusamus laboriosam autem. Consequatur expedita laborum nulla rem cumque architecto eius maxime nam dolore nemo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quidem eius dolorem distinctio. Expedita, eligendi laborum minima dolores qui adipisci necessitatibus quidem sit delectus cumque voluptates sint eveniet nemo in. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda animi molestias rerum excepturi illo, voluptatibus, veritatis expedita itaque quasi omnis quod sapiente quibusdam eveniet ducimus et blanditiis odit! Expedita, hic.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque dicta laborum, nam at amet cum sapiente quae magnam itaque porro! Ratione aperiam expedita quo debitis voluptate architecto placeat quidem a. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum reiciendis eius quod illo placeat ab accusamus laboriosam autem. Consequatur expedita laborum nulla rem cumque architecto eius maxime nam dolore nemo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quidem eius dolorem distinctio. Expedita, eligendi laborum minima dolores qui adipisci necessitatibus quidem sit delectus cumque voluptates sint eveniet nemo in. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda animi molestias rerum excepturi illo, voluptatibus, veritatis expedita itaque quasi omnis quod sapiente quibusdam eveniet ducimus et blanditiis odit! Expedita, hic.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque dicta laborum, nam at amet cum sapiente quae magnam itaque porro! Ratione aperiam expedita quo debitis voluptate architecto placeat quidem a. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum reiciendis eius quod illo placeat ab accusamus laboriosam autem. Consequatur expedita laborum nulla rem cumque architecto eius maxime nam dolore nemo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quidem eius dolorem distinctio. Expedita, eligendi laborum minima dolores qui adipisci necessitatibus quidem sit delectus cumque voluptates sint eveniet nemo in. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda animi molestias rerum excepturi illo, voluptatibus, veritatis expedita itaque quasi omnis quod sapiente quibusdam eveniet ducimus et blanditiis odit! Expedita, hic.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque dicta laborum, nam at amet cum sapiente quae magnam itaque porro! Ratione aperiam expedita quo debitis voluptate architecto placeat quidem a. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum reiciendis eius quod illo placeat ab accusamus laboriosam autem. Consequatur expedita laborum nulla rem cumque architecto eius maxime nam dolore nemo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quidem eius dolorem distinctio. Expedita, eligendi laborum minima dolores qui adipisci necessitatibus quidem sit delectus cumque voluptates sint eveniet nemo in. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda animi molestias rerum excepturi illo, voluptatibus, veritatis expedita itaque quasi omnis quod sapiente quibusdam eveniet ducimus et blanditiis odit! Expedita, hic.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque dicta laborum, nam at amet cum sapiente quae magnam itaque porro! Ratione aperiam expedita quo debitis voluptate architecto placeat quidem a. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum reiciendis eius quod illo placeat ab accusamus laboriosam autem. Consequatur expedita laborum nulla rem cumque architecto eius maxime nam dolore nemo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quidem eius dolorem distinctio. Expedita, eligendi laborum minima dolores qui adipisci necessitatibus quidem sit delectus cumque voluptates sint eveniet nemo in. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda animi molestias rerum excepturi illo, voluptatibus, veritatis expedita itaque quasi omnis quod sapiente quibusdam eveniet ducimus et blanditiis odit! Expedita, hic.</p>
+</body>
+</html>
