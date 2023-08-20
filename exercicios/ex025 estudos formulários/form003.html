@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form action="cadastro.php" method="get">
+        <p>
+            <label for="idnome">Nome: </label>
+            <input type="text" name="nome" id="idnome" required maxlength="30" placeholder="Nome Completo" autocomplete="name">
+        </p>
+        <p>
+            <label for="idmedia">Média</label>
+            <input type="number" name="media" id="idmedia" min="0" max="10" placeholder="de 0 a 10" step="0.1">
+            <!-- step permite que sejam aceitos numeros quebrados -->
+        </p>
+        <p>
+            <label for="idmes">Período letivo: </label>
+            <input type="month" name="mes" id="idmes" value="2020-11">
+            <!-- value é o valor preenchido nos inputs -->
+        </p>
+        <p>
+            <label for="iddia">Dia da prova: </label>
+            <input type="date" name="dia" id="iddia">
+        </p>
+        <p>
+            <label for="idhora">Horário da prova: </label>
+            <input type="time" name="hora" id="idhora">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
