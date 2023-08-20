@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="idusu">Usuário: </label>
+            <input type="text" name="usu" id="idusu" required maxlength="25" size="12" placeholder="Nome do Usuário" autocomplete="username">
+            <!-- required faz com que o preenchimento do imput seja obrigatório -->
+            <!-- size, tamanho da caixa do input -->
+            <!-- placeholder, mostra um texto no input quando não tem nada escrito nele, é interessante usar essa função para guiar o usuário dando uma dica do que ele tem q digitar -->
+            <!-- maxlength, dá um numero maximo de caracteres para o input -->
+            <!-- minlength, dá um numero minimo de caracteres para o input -->
+        </p>
+        <p>
+            <label for="idsenha">Senha: </label>
+            <input type="password" name="senha" id="idsenha" required minlength="8" maxlength="25" size="12" placeholder="Senha do Usuário" autocomplete="current-password">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

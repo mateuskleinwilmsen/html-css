@@ -12,15 +12,18 @@
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
-    <!-- autocomplete="off" para tirar as sugestões de completar campos de texto-->
-    <form action="cadastro.php" autocomplete="off">
-        <p>Nome: 
-            <input type="text" name="nome" id="nome">
+    <!-- autocomplete="off" para tirar as sugestões de completar campos de texto -->
+    <!-- action é para onde os dados do formulário irão -->
+    <form action="cadastro.php" method="get" autocomplete="off">
+        <p><label for="idnome">Nome:</label>
+            <input type="text" name="nome" id="idnome">
         </p>
-        <p>Sobrenome: 
-            <input type="tel" name="sobrenome" id="sobrenome">
+        <p><label for="idsobrenome">Sobrenome:</label>
+            <input type="tel" name="sobrenome" id="idsobrenome">
         </p>
         <p><input type="submit" value="Enviar"></p>
     </form>
+    <!-- Método GET, é o método padrão, aparece dados na url, não é seguro para senhas -->
+    <!-- Método POST, não aparece dados na url, mas ele não é protegido, é visivel no inspecionar > networking > headers -->
 </body>
 </html>
