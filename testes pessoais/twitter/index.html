@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body{
+            background-color: black;
+        }
+
+        div#tela-postar{
+            background-color: #black;
+        }
+
+        div#texto-postar{
+            background-color: #black;
+        }
+        
+        div#pagina-inicial{
+            display: block;
+            margin: auto;
+            width: 600px;
+            height: 100vh;
+            border: 1px solid rgb(80, 80, 80);
+            border-top: 0px;
+            border-bottom: 0px;
+        }
+
+        div#titulo{
+            border-bottom: 1px solid rgb(80, 80, 80);
+        }
+
+        img{
+            border-radius: 50%;
+            padding: 12px;
+        }
+
+        p{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.3em;
+            padding: 10px;
+            font-weight: bold;
+        }
+        
+        input[type=text]{
+            background-color: black;
+            border: 0px;
+            font-size: 1em;
+            color: white;
+            display: block;
+            margin: auto;
+        }
+
+        input:focus-visible{
+            outline: 0px;
+        }
+
+        input[type=submit]{
+            background-color: hsl(204, 78%, 44%);
+            color: white;
+            border: 0px;
+            border-radius: 8px;
+            padding: 8px;
+            display: block;
+            margin-left: 530px;
+        }
+
+        input[type=submit]:hover{
+            background-color: hsl(204, 78%, 40%);
+        }
+    </style>
+</head>
+<body>
+    <div id="pagina-inicial">
+        <div id="titulo">
+            <p>Página Inicial</p>
+        </div>
+        <div id="tela-postar">
+            <img src="img/foto-perfil.png" alt="Foto de Perfil">
+            <div id="texto-postar">
+                <input type="text" name="post" id="idpost" required placeholder="O que está acontecendo?" size="50"><br>
+                <input type="submit" value="Postar">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
