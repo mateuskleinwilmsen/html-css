@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo formulário</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="idestado">Estado:</label>
+            <select name="estado" id="idestado">
+                <optgroup label="Região Sudeste">
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+                <optgroup label="Região Sul">
+                    <option value="RS" selected>Rio Grande do Sul</option>
+                </optgroup>
+                <optgroup label="Região Nordeste">
+                    <option value="PE">Pernambuco</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="idprof">Profissão:</label>
+            <input type="text" name="prof" id="idprof" list="lstprof">
+            <datalist id="lstprof">
+                <option>Administrador</option>
+                <option>Programador</option>
+                <option>Professor</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="idmsg">Digite Mensagem</label>
+            <textarea name="msg" id="idmsg" cols="30" rows="10"></textarea>
+            <!-- placeholder n funciona no textarea :/ -->
+            <!-- quando utilizar input do tipo file usar o method post!!! -->
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
