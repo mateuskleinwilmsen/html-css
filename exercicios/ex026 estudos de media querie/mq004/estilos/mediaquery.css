@@ -5,11 +5,19 @@
 /* 
 Typical Device Breakpoints 
 -=-=-=-=-=-=-=-=-=-=-=-=-
-telas pequenas: até 600px
-celulares: de 600px até 768px
-tablet: 768px até 992px
-desktop: 992px até 1200px
-grandes telas: cima de 1200px
+do video{
+    telas pequenas: até 600px
+    celulares: de 600px até 768px
+    tablet: 768px até 992px
+    desktop: 992px até 1200px
+    grandes telas: cima de 1200px
+}
+meus{
+    celulares: até 768px (max-width: 768px)
+    tablet: de 768px (min-width px)
+    desktop: de 1200px
+    desktop-grande: de 1900px
+}
 
 */
 
